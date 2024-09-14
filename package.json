@@ -1,0 +1,55 @@
+{
+  "name": "vscode-yuque-sync",
+  "displayName": "Yuque Sync",
+  "description": "Browse, edit and sync content with Yuque",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:yuqueSync.browse",
+    "onCommand:yuqueSync.edit",
+    "onCommand:yuqueSync.sync"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "yuqueSync.browse",
+        "title": "Yuque: Browse Documents"
+      },
+      {
+        "command": "yuqueSync.edit",
+        "title": "Yuque: Edit Document"
+      },
+      {
+        "command": "yuqueSync.sync",
+        "title": "Yuque: Sync Document"
+      }
+    ],
+    "configuration": {
+      "title": "Yuque Sync",
+      "properties": {
+        "yuqueSync.token": {
+          "type": "string",
+          "default": "",
+          "description": "Your Yuque API token"
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/vscode": "^1.93.0",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
+  },
+  "scripts": {
+    "compile": "tsc"
+  }
+}

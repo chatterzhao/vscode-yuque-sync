@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "outDir": "./out",
+      "rootDir": "./src",
+      "strict": true,
+      "esModuleInterop": true,
+      "lib": ["ES2018", "DOM"]
+    },
+    "exclude": ["node_modules", ".vscode-test"]
+}
