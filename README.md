@@ -1,6 +1,7 @@
-# Yuque Sync VS Code 扩展
+# 语雀同步扩展
+> Yuque Sync Extension
 
-这是一个用于在Visual Studio Code中浏览、编辑和同步语雀文档的扩展。
+这是一个用于在 Visual Studio Code 中浏览、编辑和同步语雀文档的扩展。
 
 ## 功能
 
@@ -10,44 +11,39 @@
 
 ## 安装
 
-目前，这个扩展还未发布到VS Code扩展市场。您可以通过以下步骤在本地安装和使用：
+搜索扩展`yuque-sync`进行安装
 
-1. 克隆或下载此项目到本地
-2. 打开终端，进入项目目录
-3. 运行 `npm install` 安装依赖
-4. 运行 `npm run compile` 编译项目
-5. 按 `F5` 键在新的VS Code窗口中启动扩展
+
+## 申请 API Token
+> 语雀高级会员才可申请 Token
+1. 点击链接去申请：[https://www.yuque.com/settings/tokens](https://www.yuque.com/settings/tokens)
+2. 打开链接后登录您的语雀账号
+3. 进入个人设置 > 账户设置 > 开发者设置
+4. 创建一个新的应用，获取 API token
+5. 输入后返回即可，会自动保存
+
 
 ## 配置
 
-在使用扩展之前，您需要设置您的语雀API token：
+在使用扩展之前，您需要设置您的语雀 API token：
+> 打开扩展，如果没有配置 API Token，扩展默认会打开配置页面，如果没有打开或者要修改 API Token，请按下面的指引进行操作
 
 1. 在VS Code中，打开设置（文件 > 首选项 > 设置）
 2. 搜索"Yuque Sync"
-3. 在"Yuque: Token"字段中输入您的语雀API token
+3. 在"Yuque: Token"字段中输入您的语雀 API token
 
-要获取语雀API token：
-1. 登录您的语雀账号
-2. 进入个人设置 > 账户设置 > 开发者设置
-3. 创建一个新的应用，获取API token
+
 
 ## 使用方法
 
-### 浏览文档
+1. 在VS Code的侧边栏中，找到Yuque Sync图标并点击。
+2. 在打开的面板中，输入您的Yuque API token并保存。
+3. 使用面板中的按钮来浏览、编辑或同步文档。
 
-1. 按下`Ctrl+Shift+P`（在macOS上是`Cmd+Shift+P`）打开命令面板
-2. 输入"Yuque: Browse Documents"并选择
-
-### 编辑文档
-
-1. 按下`Ctrl+Shift+P`（在macOS上是`Cmd+Shift+P`）打开命令面板
-2. 输入"Yuque: Edit Document"并选择
-3. 选择您想要编辑的文档
-
-### 同步文档
-
-1. 在编辑文档后，按下`Ctrl+Shift+P`（在macOS上是`Cmd+Shift+P`）打开命令面板
-2. 输入"Yuque: Sync Document"并选择
+您仍然可以使用命令面板（Ctrl+Shift+P 或 Cmd+Shift+P）来执行这些操作：
+- "Yuque: Browse Documents"
+- "Yuque: Edit Document"
+- "Yuque: Sync Document"
 
 ## 注意事项
 

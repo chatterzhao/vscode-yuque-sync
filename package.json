@@ -10,9 +10,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:yuqueSync.browse",
-    "onCommand:yuqueSync.edit",
-    "onCommand:yuqueSync.sync"
+    "onView:yuqueSyncView"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -28,6 +26,18 @@
       {
         "command": "yuqueSync.sync",
         "title": "Yuque: Sync Document"
+      },
+      {
+        "command": "yuqueSync.refreshTree",
+        "title": "Refresh Yuque Tree"
+      },
+      {
+        "command": "yuqueSync.openDocument",
+        "title": "Open Yuque Document"
+      },
+      {
+        "command": "yuqueSync.syncDocument",
+        "title": "Sync Document to Yuque"
       }
     ],
     "configuration": {
@@ -36,9 +46,26 @@
         "yuqueSync.token": {
           "type": "string",
           "default": "",
-          "description": "Your Yuque API token"
+          "description": "请填写您的语雀 API token.\n 如果没有请先从这里申请(语雀超级会员可申请)：\nhttps://www.yuque.com/settings/tokens"
         }
       }
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "yuque-explorer",
+          "title": "Yuque",
+          "icon": "src/resources/yuque-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "yuque-explorer": [
+        {
+          "id": "yuqueSyncView",
+          "name": "Yuque Sync"
+        }
+      ]
     }
   },
   "devDependencies": {

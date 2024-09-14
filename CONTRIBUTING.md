@@ -2,6 +2,31 @@
 
 感谢您对Yuque Sync VS Code扩展的兴趣！我们欢迎并感谢任何形式的贡献。
 
+## 功能列表
+- 浏览知识库
+- 编辑文档
+- 同步文档到语雀
+- 使用语雀编辑器编辑
+
+## 参考文档
+### 语雀文档
+[https://www.yuque.com/yuque/developer](https://www.yuque.com/yuque/developer)
+
+### 参考其他扩展项目-类似项目
+[https://github.com/yrming/vscode-yuque](https://github.com/yrming/vscode-yuque)
+
+### 参考其他扩展项目-语雀编辑器
+[https://github.com/ilimei/vscode-plugin-lake-editor](https://github.com/ilimei/vscode-plugin-lake-editor)
+
+
+## 快速开始
+1. 克隆或下载此项目到本地
+2. 打开终端，进入项目目录
+3. 运行 `npm install` 安装依赖（Node.js 20+）
+4. 运行 `npm run compile` 编译项目
+5. 按 `F5` 键在新的VS Code窗口中启动扩展
+
+
 ## 开发环境设置
 
 1. 克隆仓库到本地：
@@ -24,7 +49,9 @@
    code .
    ```
 
+
 ## 开发
+
 
 1. 修改`src/extension.ts`文件或其他相关文件。
 
